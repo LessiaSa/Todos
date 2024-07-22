@@ -30,7 +30,11 @@ public class TodosTest {
 
     @Test
     public void testGetSubtasks() {
-        String[] subtasks = {"Помыть полы", "Вынести мусор", "Полить цветы", "Приготовить обед"};
+        String[] subtasks = {
+                "Помыть полы",
+                "Вынести мусор",
+                "Полить цветы",
+                "Приготовить обед"};
         Epic epic = new Epic(37, subtasks);
         String[] expected = subtasks;
         String[] actual = epic.getSubtasks();
@@ -39,7 +43,11 @@ public class TodosTest {
 
     @Test
     public void testGetEpic() {
-        String[] subtasks = {"Помыть полы", "Вынести мусор", "Полить цветы", "Приготовить обед"};
+        String[] subtasks = {
+                "Помыть полы",
+                "Вынести мусор",
+                "Полить цветы",
+                "Приготовить обед"};
         Epic epic = new Epic(37, subtasks);
         Task task = new Task(37);
         int expected = 37;
@@ -50,9 +58,17 @@ public class TodosTest {
     @Test
     public void testSearch() {
         SimpleTask simpleTask = new SimpleTask(9, "Меню на завтрак");
-        String[] subtasks = {"Помыть полы", "Вынести мусор", "Полить цветы", "Приготовить обед"};
+        String[] subtasks = {
+                "Помыть полы",
+                "Вынести мусор",
+                "Полить цветы",
+                "Приготовить обед"};
         Epic epic = new Epic(14, subtasks);
-        Meeting meeting = new Meeting(24, "Новые Звездные войны", "Подбор актеров", "1 августа в 12-00");
+        Meeting meeting = new Meeting(
+                24,
+                "Новые Звездные войны",
+                "Подбор актеров",
+                "1 августа в 12-00");
         Todos todos = new Todos();
         todos.add(simpleTask);
         todos.add(meeting);
@@ -65,9 +81,17 @@ public class TodosTest {
     @Test
     public void testGetTitle() {
         SimpleTask simpleTask = new SimpleTask(9, "Меню на завтрак");
-        String[] subtasks = {"Помыть полы", "Вынести мусор", "Полить цветы", "Приготовить обед"};
+        String[] subtasks = {
+                "Помыть полы",
+                "Вынести мусор",
+                "Полить цветы",
+                "Приготовить обед"};
         Epic epic = new Epic(14, subtasks);
-        Meeting meeting = new Meeting(24, "Новые Звездные войны", "Подбор актеров", "1 августа в 12-00");
+        Meeting meeting = new Meeting(
+                24,
+                "Новые Звездные войны",
+                "Подбор актеров",
+                "1 августа в 12-00");
         Todos todos = new Todos();
         todos.add(simpleTask);
         todos.add(meeting);
@@ -80,9 +104,17 @@ public class TodosTest {
     @Test
     public void testPartEpic() {
         SimpleTask simpleTask = new SimpleTask(9, "Меню на завтрак");
-        String[] subtasks = {"Помыть полы", "Вынести мусор", "Полить цветы", "Приготовить обед"};
+        String[] subtasks = {
+                "Помыть полы",
+                "Вынести мусор",
+                "Полить цветы",
+                "Приготовить обед"};
         Epic epic = new Epic(14, subtasks);
-        Meeting meeting = new Meeting(24, "Новые Звездные войны", "Подбор актеров", "1 августа в 12-00");
+        Meeting meeting = new Meeting(
+                24,
+                "Новые Звездные войны",
+                "Подбор актеров",
+                "1 августа в 12-00");
         Todos todos = new Todos();
         todos.add(simpleTask);
         todos.add(meeting);
@@ -95,9 +127,17 @@ public class TodosTest {
     @Test
     public void testPartMeetingTopic() {
         SimpleTask simpleTask = new SimpleTask(9, "Меню на завтрак");
-        String[] subtasks = {"Помыть полы", "Вынести мусор", "Полить цветы", "Приготовить обед"};
+        String[] subtasks = {
+                "Помыть полы",
+                "Вынести мусор",
+                "Полить цветы",
+                "Приготовить обед"};
         Epic epic = new Epic(14, subtasks);
-        Meeting meeting = new Meeting(24, "Новые Звездные войны", "Подбор актеров", "1 августа в 12-00");
+        Meeting meeting = new Meeting(
+                24,
+                "Новые Звездные войны",
+                "Подбор актеров",
+                "1 августа в 12-00");
         Todos todos = new Todos();
         todos.add(simpleTask);
         todos.add(meeting);
@@ -110,9 +150,17 @@ public class TodosTest {
     @Test
     public void testPartMeetingProject() {
         SimpleTask simpleTask = new SimpleTask(9, "Меню на завтрак");
-        String[] subtasks = {"Помыть полы", "Вынести мусор", "Полить цветы", "Приготовить обед"};
+        String[] subtasks = {
+                "Помыть полы",
+                "Вынести мусор",
+                "Полить цветы",
+                "Приготовить обед"};
         Epic epic = new Epic(14, subtasks);
-        Meeting meeting = new Meeting(24, "Новые Звездные войны", "Подбор актеров", "1 августа в 12-00");
+        Meeting meeting = new Meeting(
+                24,
+                "Новые Звездные войны",
+                "Подбор актеров",
+                "1 августа в 12-00");
         Todos todos = new Todos();
         todos.add(simpleTask);
         todos.add(meeting);
@@ -125,9 +173,17 @@ public class TodosTest {
     @Test
     public void testPartMeetingStart() {
         SimpleTask simpleTask = new SimpleTask(9, "Меню на завтрак");
-        String[] subtasks = {"Помыть полы", "Вынести мусор", "Полить цветы", "Приготовить обед"};
+        String[] subtasks = {
+                "Помыть полы",
+                "Вынести мусор",
+                "Полить цветы",
+                "Приготовить обед"};
         Epic epic = new Epic(14, subtasks);
-        Meeting meeting = new Meeting(24, "Новые Звездные войны", "Подбор актеров", "1 августа в 12-00");
+        Meeting meeting = new Meeting(
+                24,
+                "Новые Звездные войны",
+                "Подбор актеров",
+                "1 августа в 12-00");
         Todos todos = new Todos();
         todos.add(simpleTask);
         todos.add(meeting);
@@ -140,9 +196,17 @@ public class TodosTest {
     @Test
     public void testTasksNothing() {
         SimpleTask simpleTask = new SimpleTask(9, "Меню на завтрак");
-        String[] subtasks = {"Помыть полы", "Вынести мусор", "Полить цветы", "Приготовить обед"};
+        String[] subtasks = {
+                "Помыть полы",
+                "Вынести мусор",
+                "Полить цветы",
+                "Приготовить обед"};
         Epic epic = new Epic(14, subtasks);
-        Meeting meeting = new Meeting(24, "Новые Звездные войны", "Подбор актеров", "1 августа в 12-00");
+        Meeting meeting = new Meeting(
+                24,
+                "Новые Звездные войны",
+                "Подбор актеров",
+                "1 августа в 12-00");
         Todos todos = new Todos();
         todos.add(simpleTask);
         todos.add(meeting);
@@ -163,9 +227,17 @@ public class TodosTest {
     @Test
     public void testMultipleTasks() {
         SimpleTask simpleTask = new SimpleTask(9, "Меню на завтрак");
-        String[] subtasks = {"Помыть полы", "Вынести мусор", "Полить цветы", "Приготовить обед"};
+        String[] subtasks = {
+                "Помыть полы",
+                "Вынести мусор",
+                "Полить цветы",
+                "Приготовить обед"};
         Epic epic = new Epic(14, subtasks);
-        Meeting meeting = new Meeting(24, "Новые Звездные войны", "Подбор актеров", "1 августа в 12-00");
+        Meeting meeting = new Meeting(
+                24,
+                "Новые Звездные войны",
+                "Подбор актеров",
+                "1 августа в 12-00");
         Todos todos = new Todos();
         todos.add(simpleTask);
         todos.add(meeting);
@@ -174,20 +246,29 @@ public class TodosTest {
         Task[] actual = todos.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testMultipleTasksNew() {
-    SimpleTask simpleTask = new SimpleTask(9, "Меню на завтрак");
-    String[] subtasks = {"Помыть полы", "Вынести мусор", "Полить цветы", "Приготовить обед"};
-    Epic epic = new Epic(14, subtasks);
-    Meeting meeting = new Meeting(24, "Новые Звездные войны", "Подбор актеров", "1 августа в 12-00");
-    Todos todos = new Todos();
-    todos.add(simpleTask);
-    todos.add(meeting);
-    todos.add(epic);
-    String[]expected = {"Полить цветы", "Подбор актеров","Меню на завтрак"};
-    String[] actual = {"Полить цветы", "Подбор актеров","Меню на завтрак"};
-    Assertions.assertArrayEquals(expected,actual);
-}
+        SimpleTask simpleTask = new SimpleTask(9, "Меню на завтрак");
+        String[] subtasks = {
+                "Помыть полы",
+                "Вынести мусор",
+                "Полить цветы",
+                "Приготовить обед"};
+        Epic epic = new Epic(14, subtasks);
+        Meeting meeting = new Meeting(
+                24,
+                "Новые Звездные войны",
+                "Подбор актеров",
+                "1 августа в 12-00");
+        Todos todos = new Todos();
+        todos.add(simpleTask);
+        todos.add(meeting);
+        todos.add(epic);
+        String[] expected = {"Полить цветы", "Подбор актеров", "Меню на завтрак"};
+        String[] actual = {"Полить цветы", "Подбор актеров", "Меню на завтрак"};
+        Assertions.assertArrayEquals(expected, actual);
+    }
 
 }
 
