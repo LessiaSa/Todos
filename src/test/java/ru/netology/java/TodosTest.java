@@ -248,25 +248,12 @@ public class TodosTest {
     }
 
     @Test
-    public void testMultipleTasksNew() {
-        SimpleTask simpleTask = new SimpleTask(9, "Меню на завтрак");
-        String[] subtasks = {
-                "Помыть полы",
-                "Вынести мусор",
-                "Полить цветы",
-                "Приготовить обед"};
-        Epic epic = new Epic(14, subtasks);
-        Meeting meeting = new Meeting(
-                24,
-                "Новые Звездные войны",
-                "Подбор актеров",
-                "1 августа в 12-00");
+    public void testTasksMult() {
         Todos todos = new Todos();
-        todos.add(simpleTask);
-        todos.add(meeting);
-        todos.add(epic);
-        String[] expected = {"Полить цветы", "Подбор актеров", "Меню на завтрак"};
-        String[] actual = {"Полить цветы", "Подбор актеров", "Меню на завтрак"};
+        todos.add(new SimpleTask(1, "Сходить в бассейн"));
+        todos.add(new Epic(2, new String[]{"Погулять"}));
+        Task[] expected = {new SimpleTask(1, "Сходить в бассейн"), new Epic(2, new String[]{"Погулять"})};
+        Task[] actual = todos.search("");
         Assertions.assertArrayEquals(expected, actual);
     }
 
