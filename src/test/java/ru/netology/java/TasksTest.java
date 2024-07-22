@@ -37,7 +37,7 @@ public class TasksTest {
     }
     @Test
     public void testMeetingMatches() {
-        Task meeting = new Meeting(12,"Новые Звездные войны","Подбор актеров","1 августа в 12-00");
+        Task meeting = new Meeting(12, "Новые Звездные войны", "Подбор актеров", "1 августа в 12-00");
         boolean expected = true;
         boolean actual = meeting.matches("Подбор актеров");
         Assertions.assertEquals(expected,actual);

@@ -4,7 +4,7 @@ package ru.netology.java;
 public class SimpleTask extends Task {
     protected String title;
 
-    public SimpleTask(int id,String title) {
+    public SimpleTask(int id, String title) {
         super(id);
         this.title = title;
     }
